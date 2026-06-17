@@ -1,0 +1,3 @@
+## 2024-05-24 - Icon-only Social Links Accessibility
+**Learning:** In portfolio or marketing sites, icon-only social links (like GitHub, Twitter, LinkedIn) often rely solely on visual icons (like FontAwesome) for meaning. Screen readers announce these as empty links if they lack accessible text, severely degrading navigation for users relying on assistive technologies.
+**Action:** Always add descriptive `aria-label` attributes to `<a>` tags when the anchor only contains an `<i>` or `<svg>` tag without visible text. This ensures screen reader users understand the destination of the link without breaking the visual design.
