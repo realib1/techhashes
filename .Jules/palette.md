@@ -1,0 +1,3 @@
+## 2024-03-21 - [Icon-Only Links Accessibility]
+**Learning:** Found multiple instances of `<a>` tags wrapping FontAwesome icons without accessible names, causing these links to be announced as empty or generic by screen readers. Furthermore, duplicate HTML IDs (`profile-link`) were used to identify similar sets of links in different page sections, violating HTML semantics and potentially disrupting focus management.
+**Action:** Always verify that every interactive element wrapping an icon has a descriptive `aria-label` attribute. Ensure IDs are unique across the entire DOM structure, particularly when duplicating components across header/footer sections.
